@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Feedback - What Our Clients Say</title> <meta name="description" content="Read feedback and reviews from our satisfied clients who trusted us with their website projects."> <meta name="keywords" content="client feedback, testimonials, reviews, customer opinions, website service feedback, user experience"> <meta name="author" content="Juniordedign">
+    <style>
+        
+        
+        body {
+            margin: 0;
+            font-family: Times New Roman, sans;
+            background: #f4f4f4f4;
+            
+        }
+        
+         * {
+  box-sizing: border-box;
+}
+        
+        /*Home**/ 
+        
+        
+.menu_bar{
+   background-color: black;
+   background: cover;
+   height: 70px;
+   width: auto;
+   justify-content: space-between;
+   display: flex;
+   align-items: center;
+   padding: 0 1%;
+}
+
+     /*sticky Navigation*/
+     
+        div.sticky {
+  position: sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: black;
+  border: 1px solid black;
+  z-index: 1000;
+}     
+        
+        
+        
+  /* brand Logo */
+
+h6{
+ background-image: url(./logo.jpg); 
+ position: relative;
+ background-position: center;
+ background-size: 200px;
+ display: inline-block;
+ height: 70px;
+ width: 100px;
+ text-indent: -99999999px;
+}
+
+        
+        
+        
+        
+        /*navigation*/
+        
+        
+/*new toggle*/
+ .nav-toggle {
+            position: fixed;
+            top: 30px;
+            left: 90%;
+            z-index: 100;
+            cursor: pointer;
+            transition: all 0.3s;        
+        }
+
+
+      .nav-toggle:hover{
+          background: transparent;
+          transition: all 0.2s;
+      }
+
+
+
+        .nav-toggle .bar {
+            width: 20px;
+            height: 3px;
+            background: #ffffea;
+            margin: 4px 0;
+            transition: all 0.3s;
+            
+        }
+
+        .nav-toggle.active .bar:nth-child(1) {
+            transform: rotate(-45deg) translate(-6px, 6px);
+        }
+
+        .nav-toggle.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .nav-toggle.active .bar:nth-child(3) {
+            transform: rotate(45deg) translate(-6px, -6px);
+        }
+
+        .nav-menu {     
+            position: fixed;
+            top: 10%;
+            left: -300px;
+            width: 190px;
+            height: 90%;
+            background: linear-gradient(to right,  gray, gray, gray, gray, gray, gray, gray, gray, gray, gray, #ddd);    
+            transition: all 0.3s;
+            padding: 15px;
+            box-shadow: 2px 0 5px rgba(2,2,2,2.9);
+            z-index: 99;
+            border-radius: 15px;
+            border: 1px solid black;
+        }
+
+        .nav-menu.active {
+            left: 0%;
+        }
+
+        .nav-menu ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 35px;
+          
+        }
+
+        .nav-menu ul li {
+            margin-top: 25px;
+            padding: 15px;
+      /*    background-image: url(./back.jpg); */
+            position: relative;
+            backdrop-filter: brightness(30%);
+            border-radius: 20px;
+        }
+
+        .nav-menu ul li a {
+            text-decoration: none;
+            color: #ffffea;
+            font-size: 18px;
+        }
+        
+        .nav-menu ul li a.active{
+            color: grey;
+        }
+
+        .nav-menu  a:hover{
+            color: grey;         
+        }
+        
+        .nav-menu ul li a.active{
+            color: grey;
+       }
+       
+       
+
+        
+        /*About*
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }  */
+        .about-section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            margin-top: -10px;
+            background-color: gainsboro;
+            border-radius: 10%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .about-section h1 {
+            font-size: 1.9rem;
+            margin-bottom: 20px;
+            margin-left: -10px;
+            color: black;
+        }
+        .about-section, .heads{
+            line-height: 1.7;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .heads{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sanas-serif;
+        }
+        .about-section h2 {
+            font-size: 1.7rem;
+            margin-top: 30px;
+            color: black;
+        }
+        
+        
+        .respons{
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+            margin-left: 10px;
+            color: black;
+        }
+        .respons p{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sanas-serif;
+        }
+        .respons h2, p{
+            text-align: center;
+        }
+        
+   
+              .about-sections {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            margin-top: -10px;
+            background-color: #eaeaea;   
+            border-radius: 10%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;                        
+        }
+         
+         .smaller {
+            color: black;   
+            padding: 0 10px;
+            border-radius: 15px;
+            border-style: insert;
+            background-color: #efefef; 
+        }
+        
+        
+   /*contactbutton*/        
+    
+button {
+    background-color: transparent;
+    color: black;
+    border: none; 
+    padding: 10px 20px;
+    margin-left: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+button:hover {
+    background-color: white;
+}
+        
+        
+        #response-message {
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sanas-serif;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    text-align: center;
+    border-radius: 5%;
+    font-weight: bold;
+}
+
+
+        
+        /*footer*/
+        
+        footer {
+      background-color: gainsboro;
+      color: black;  
+      padding: 20px;
+      margin-top: -40px;
+      text-align: center;
+      border-style: insert;
+    }
+    
+    
+        
+        /*START UP*/
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.input[type=text], select:hover{
+   
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #ddd;
+  color: black;
+  border: 1px solid black;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #ffffff;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+        
+        
+    </style>
+</head>
+<body>
+    
+        <!-- header -->
+     <div class="sticky">
+    <div class="menu_bar">
+  <h6>Jr project logo</h6>
+     <ul>
+                  
+           <!-- bar -->      
+        <div class="nav-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+    </div> 
+           </div>
+  </ul>
+  </nav>  
+  </div>
+    
+    
+    
+    <!-- Toggle Button -->
+    <div class="nav-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutpre.html">About</a></li>
+            <li><a href="./servicepre.html">Services</a></li>
+            <li><a href="./portfoliopre.html">Portfolio</a></li>
+            <li><a href="#" class="active">Feedback</a></li>
+            <li><a href="./contactpre.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        const toggleButton = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        toggleButton.addEventListener('click', () => {
+            toggleButton.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !toggleButton.contains(e.target)) {
+                toggleButton.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
+    
+    
+    <!-- start up -->
+ <div class="about-section">
+ <h1>Feedback</h1>
+<p class="heads">if the <i><b>website</b></i> is showing  error or no data or any other problem, please inform on following details.
+
+<br>
+    <ul>
+        <li>Email address 
+        <a href="mailto:juniorfrancis8888@gmail.com?subject=Feedback&body=Hello%20Junior,">juniorfrancis8888@gmail.com</a>
+        </li></br>
+         <li>WhatsApp
+          <a href="https://wa.me/+255686055093" target="_blank">+255 686 055 093</a></li></br>
+        <!--  --<li>Telegram
+          <a href="https://t.me/@Vini_jr98" target="_blank">+255 686 055 093</a></li></br> --
+        <li>Normal text or call via
+         <a href="tel:+255686055093">+255 686 055 093</a></li>-->
+    </ul>
+  </p>
+</div>
+
+
+<div class="respons">
+ <h2>We Value Your Feedback</h2>
+  <p>Please share your thoughts about our web design.</p>
+</div>
+
+<div class="container">
+  <form id="feedback-form" action="#">
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+    </div>
+  </div>  
+<!--  <div class="row">
+    <div class="col-25">
+      <label for="country">Country</label>
+    </div>
+    <div</div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="Tanzania">Tanzania</option>
+        <option value="Uganda">Uganda</option>
+        <option value="Kenya">Kenya</option>
+        <option value="Others">Others</option>
+      </select>
+    </div>
+  </div> -->
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">Feedback</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+
+
+     <script>  
+    document.getElementById('feedback-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const name = document.getElementById('fname').value;
+    const email = document.getElementById('lname').value;
+    const feedback = document.getElementById('subject').value;
+
+    // Here you can handle the feedback submission, e.g., send it to a server
+    // For demonstration, we'll just show a thank you message
+    document.getElementById('response-message').innerHTML = `Thank you, ${name}! Your feedback has been received.`;
+
+    // Clear the form
+    document.getElementById('feedback-form').reset();
+});
+
+     </script>
+
+
+
+     <div class="about-sections">
+          <div id="response-message"></div>
+   <!-- <small class="smaller"><i>itz Junior Developer</i></small>-->
+    </div>
+    
+    
+    <!-- footer -->
+
+    <footer>        
+            <div class="footer-copyright">
+        © Jr Web Design 2025. All rights reserved.
+    </div>        
+    </footer>    
+</body>
+</html>

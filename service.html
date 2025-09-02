@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Custom Website Design & Development</title> 
+    <meta name="description" content="Discover our wide range of web design and development services including e-commerce, responsive design, SEO, and more."> 
+    <meta name="keywords" content="website services, web design, development, SEO services, custom websites, e-commerce, UI/UX design"> 
+    <meta name="author" content="Juniordesign"> 
+
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Times new roman", serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ddd; 
+    color: black;
+}
+
+h1 {
+   font-family: "Times New Roman", serif;
+    color: black;
+    margin-bottom: 5px;
+    font-size: 2.5em;
+}
+ p{
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sanas-serif;
+     word-spacing: 1.5;
+ }
+
+.menu_bar{
+   background-color: black;
+   background: cover;
+   height: 75px;
+   width: 100%;
+   justify-content: space-between;
+   display: flex;
+   align-items: center;
+   padding: 0 1%;
+}
+
+     /*sticky Navigation*/
+        div.sticky {
+  position: sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: black;
+  border: 1px solid black;
+  z-index: 1000;
+}     
+     /*End here*/
+     
+     h6{
+ background-image: url(./jrservice.jpg); 
+ position: relative;
+ background-position: center;
+ background-size: 200px;
+ display: inline-block;
+ height: 70px;
+ width: 100px;
+ text-indent: -99999999px;
+}
+
+
+        /*navigation*/
+        
+        
+/*new toggle*/
+ .nav-toggle {
+            position: fixed;
+            top: 30px;
+            left: 90%;
+            z-index: 100;
+            cursor: pointer;
+            transition: all 0.3s;        
+        }
+
+
+      .nav-toggle:hover{
+          background: transparent;
+          transition: all 0.2s;
+      }
+
+
+
+        .nav-toggle .bar {
+            width: 20px;
+            height: 3px;
+            background: #ffffea;
+            margin: 4px 0;
+            transition: all 0.3s;
+            
+        }
+
+        .nav-toggle.active .bar:nth-child(1) {
+            transform: rotate(-45deg) translate(-6px, 6px);
+        }
+
+        .nav-toggle.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .nav-toggle.active .bar:nth-child(3) {
+            transform: rotate(45deg) translate(-6px, -6px);
+        }
+
+        .nav-menu {       
+            position: fixed;
+            top: 10%;
+            left: -300px;
+            width: 180px;
+            height: 90%;
+           background: linear-gradient(to right,  gray, gray, gray, gray, gray, gray, gray, gray, gray, gray, #ddd);    
+            transition: all 0.3s;
+            padding: 15px;
+            box-shadow: 2px 0 5px rgba(2,2,2,2.9);
+            z-index: 99;
+            border-radius: 15px;
+            border: 1px solid black;
+        }
+
+        .nav-menu.active {
+            left: 0%;
+        }
+
+        .nav-menu ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 35px;
+          
+        }
+
+        .nav-menu ul li {
+            margin-top: 25px;
+            padding: 15px;
+          /*  background-image: url(./img/back.jpg);*/
+            position: relative;
+            backdrop-filter: brightness(30%);
+            border-radius: 20px;
+        }
+
+        .nav-menu ul li a {
+            text-decoration: none;
+            color: #ffffea; 
+            font-size: 18px;
+        }
+        
+        .nav-menu ul li a.active{
+            color: grey;
+        }
+
+        .nav-menu  a:hover{
+            color: grey;         
+        }
+        
+        .nav-menu ul li a.active{
+            color: grey;
+       }
+
+
+
+
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    padding-bottom: 10%;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card h2{
+    font-family: "Times new roman", serif;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+
+        .about-section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            margin-top: -10px;
+            background-color: gainsboro;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .about-section h1 {
+            font-size: 2.0rem;
+            margin-bottom: 20px;
+            color: black;
+        }
+        .about-section p {
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        .about-section h2 {
+            font-size: 1.7rem;
+            margin-top: 30px;
+            color: black;
+        }
+        
+        
+   /*contactbutton*/        
+    
+button {
+    background-color: transparent;
+    color: black;
+    border: none; 
+    padding: 10px 20px;
+    margin-left: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.contactbutton, a{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
+
+button:hover {
+    background-color: white;
+}
+
+
+
+
+
+
+footer {
+      background-color: gainsboro;
+      color: black;  
+      padding: 20px;
+      margin-top: -40px;
+      text-align: center;
+      border-style: insert;
+    }  
+        
+    </style>
+</head>
+<body>
+    
+                 
+    <!-- header -->
+     <div class="sticky">
+    <div class="menu_bar">
+        <marquee  behavior="alternate">
+  <h6>Jr project logo</h6>
+          </marquee>
+     <ul>
+                  
+           <!-- bar -->      
+        <div class="nav-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+    </div> 
+           </div>
+  </ul>
+  </nav>  
+  </div>
+    
+    
+    
+    <!-- Toggle Button -->
+    <div class="nav-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutpre.html">About</a></li>
+            <li><a href="#" class="active">Services</a></li>
+            <li><a href="./portfoliopre.html">Portfolio</a></li>
+            <li><a href="./feedbackpre.html">Feedback</a></li>
+            <li><a href="./contactpre.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        const toggleButton = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        toggleButton.addEventListener('click', () => {
+            toggleButton.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !toggleButton.contains(e.target)) {
+                toggleButton.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
+
+  
+  
+    
+    <header>
+        <h1>My Services</h1>
+        <p>Your one-stop solution for web design and optimization.</p>
+    </header>
+    <main>
+        <div class="card-container">
+            <div class="card">
+                <h2>UI/UX Design</h2>
+                <p>Creating user-friendly and aesthetically pleasing interfaces.</p>
+            </div>
+            <div class="card">
+                <h2>Web Design</h2>
+                <p>Building responsive and modern websites tailored to your needs.</p>
+            </div>
+            <div class="card">
+                <h2>SEO Optimization</h2>
+                <p>Improving your website's visibility on search engines.</p>
+            </div>
+            <div class="card">
+                <h2>Web Hosting</h2>
+                <p>Reliable hosting solutions for your online presence.</p>
+            </div>
+            <div class="card">
+                <h2>Responsive Design</h2>
+                <p>Ensuring your website looks great on all devices.</p>
+            </div>
+        </div>
+    </main>
+ 
+   <div class="about-section">
+        <h2>Get in Touch</h2>
+        <p>If you're ready to take your online presence to the next level, contact us today! We would love to discuss your project and how we can help you achieve your goals.</p>
+       <button id="contactButton">
+           <a href="./contactpre.html" class="contactButton">Get in Touch</a>
+           </button>
+    </div>
+    </div>
+ 
+ 
+    <footer>        
+           <div class="footer-copyright">
+        © Jr Web Design 2025. All rights reserved.
+    </div>        
+    </footer>    
+</body>
+</html>

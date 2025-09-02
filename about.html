@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Expert Website Designers & Developers</title>
+<meta name="description" content="Learn more about our experienced team of website designers and developers dedicated to building high-quality digital experiences.">
+<meta name="keywords" content="about us, website development team, web designers, professional developers, company background, our team">
+<meta name="author" content="Juniordesign">
+
+    <style>
+        
+        
+        body {
+            margin: 0;
+            font-family: Times New Roman, sans;
+            background: #f4f4f4f4;
+            
+        }
+        
+        /*Home**/ 
+        
+        
+.menu_bar{
+   background-color: black;
+   background: cover;
+   height: 70px;
+   width: auto;
+   justify-content: space-between;
+   display: flex;
+   align-items: center;
+   padding: 0 1%;
+}
+
+     /*sticky Navigation*/
+     
+        div.sticky {
+  position: sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  background-color: black;
+  border: 1px solid black;
+  z-index: 1000;
+}     
+        
+        
+        
+  /* brand Logo */
+
+h6{
+ background-image: url(./logo.jpg); 
+ position: relative;
+ background-position: center;
+ background-size: 200px;
+ display: inline-block;
+ height: 70px;
+ width: 100px;
+ text-indent: -99999999px;
+}
+
+        
+        
+        
+        
+        /*navigation*/
+        
+        
+/*new toggle*/
+ .nav-toggle {
+            position: fixed;
+            top: 30px;
+            left: 90%;
+            z-index: 100;
+            cursor: pointer;
+            transition: all 0.3s;        
+        }
+
+
+      .nav-toggle:hover{
+          background: transparent;
+          transition: all 0.2s;
+      }
+
+
+
+        .nav-toggle .bar {
+            width: 20px;
+            height: 3px;
+            background: #ffffea;
+            margin: 4px 0;
+            transition: all 0.3s;
+            
+        }
+
+        .nav-toggle.active .bar:nth-child(1) {
+            transform: rotate(-45deg) translate(-6px, 6px);
+        }
+
+        .nav-toggle.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+        
+         .nav-toggle, .bar:nth-child(2) {
+            width: 15px;
+        }
+
+        .nav-toggle.active .bar:nth-child(3) {
+            transform: rotate(45deg) translate(-6px, -6px);
+        }
+
+        .nav-menu {       
+            position: fixed;
+            top: 10%;
+            left: -300px;
+            width: 150px;
+            height: 80%;
+           background: linear-gradient(to right,  gray, gray, gray, gray, gray, gray, gray, gray, gray, gray, #ddd);    
+            transition: all 0.3s;
+            padding: 15px;
+            box-shadow: 2px 0 5px rgba(2,2,2,2.9);
+            z-index: 99;
+            border-radius: 15px;
+            border: 1px solid black;
+        }
+
+        .nav-menu.active {
+            left: 0%;
+        }
+
+        .nav-menu ul {
+            list-style: none;
+            padding: 0;
+            margin-top: 35px;
+          
+        }
+
+        .nav-menu ul li {
+            margin-top: 25px;
+            padding: 15px;
+          /*  background-image: url(./back.jpg);*/
+            position: relative;
+            backdrop-filter: brightness(30%);
+            border-radius: 20px;
+        }
+
+        .nav-menu ul li a {
+            text-decoration: none;
+            color: #ffffea; 
+            font-size: 18px;
+        }
+        
+        .nav-menu ul li a.active{
+            color: grey;
+        }
+
+        .nav-menu  a:hover{
+            color: grey;         
+        }
+        
+        .nav-menu ul li a.active{
+            color: grey;
+       }
+       
+       
+
+        
+        /*About*
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }  */
+        .about-section {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            margin-top: -10px;
+            background-color: gainsboro;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .about-section h1 {
+            font-size: 2.0rem;
+            margin-bottom: 20px;
+            color: black;
+        }
+        .about-section p {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sanas-serif;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        .about-section h2 {
+            font-size: 1.7rem;
+            margin-top: 30px;
+            color: black;
+        }
+        
+        
+   /*contactbutton*/        
+    
+button {
+    background-color: transparent;
+    color: black;
+    border: none; 
+    padding: 10px 20px;
+    margin-left: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+button:hover {
+    background-color: white;
+}
+        
+        button a{  
+                
+            text-decoration: none;
+            color: black;
+        }
+        
+        
+        /*footer*/
+        
+        footer {
+      background-color: gainsboro;
+      color: black;  
+      padding: 20px;
+      margin-top: -40px;
+      text-align: center;
+      border-style: insert;
+    }
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+    
+        <!-- header -->
+     <div class="sticky">
+    <div class="menu_bar">
+  <h6>Jr project logo</h6>
+     <ul>
+                  
+           <!-- bar -->      
+        <div class="nav-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+    </div> 
+           </div>
+  </ul>
+  </nav>  
+  </div>
+    
+    
+    
+    <!-- Toggle Button -->
+    <div class="nav-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="#" class="active">About</a></li>
+            <li><a href="./servicepre.html">Services</a></li>
+            <li><a href="./portfoliopre.html">Portfolio</a></li>
+            <li><a href="./feedbackpre.html">Feedback</a></li>
+            <li><a href="./contactpre.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        const toggleButton = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+
+        toggleButton.addEventListener('click', () => {
+            toggleButton.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navMenu.contains(e.target) && !toggleButton.contains(e.target)) {
+                toggleButton.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
+    
+    
+          <!-- about -->
+    
+           <div class="about-section">
+        <h1>About Us</h1>
+        <p>Welcome to Jr Web Design, your go-to destination for innovative web design solutions. We are a passionate team of designers and developers dedicated to creating stunning, user-friendly websites that help businesses thrive in the digital world.</p>
+        
+        <h2>Our Mission</h2>
+        <p>Our mission is to empower businesses by providing them with high-quality web design services that not only look great but also drive results. We believe that a well-designed website is the cornerstone of any successful online presence.</p>
+        
+        <h2>What We Do</h2>
+        <p>At Jr Web Design, we specialize in:</p>
+        <ul>
+          <li><p>Custom Web Design</p></li>
+          <li><p>Responsive Design for Mobile and Tablet</p></li>
+          <li><p>E-commerce Solutions</p></li>
+          <li><p>UI/UX Design</p></li>
+          <li><p>Website Maintenance and Support</p></li>
+        </ul>
+        
+        <h2>Why Choose Us?</h2>
+        <p>We pride ourselves on our attention to detail, creativity, and commitment to client satisfaction. Our team works closely with you to understand your unique needs and deliver a website that reflects your brand and engages your audience.</p>
+        
+        <h2>Get in Touch</h2>
+        <p>If you're ready to take your online presence to the next level, contact us today! We would love to discuss your project and how we can help you achieve your goals.</p>
+       <button id="contactButton"><a href="contactpre.html">
+           Get in Touch</a></button>
+    </div>    
+    <!-- footer -->
+
+    <footer>        
+            <div class="footer-copyright">
+        © Jr Web Design 2025. All rights reserved.
+    </div>        
+    </footer>   
+</body>
+</html>
